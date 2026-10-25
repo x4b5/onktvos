@@ -16,3 +16,16 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: Geor
 .page img, .page video { display: block; width: 100%; height: auto; }
 /* woordbeeld: de o's zijn een calamaris en een vossenstaart */
 .o { display: inline-block; width: 0.54em; height: 0.54em; vertical-align: -0.035em; margin: 0 0.015em; }
+/* ankerlink per item: pas zichtbaar als je ernaar zoekt */
+.page section { scroll-margin-top: 4vh; }
+.page h2 { transition: border-color 1.2s; }
+.page section:target h2 { border-left-color: var(--ink); }
+.anker { color: var(--thread); text-decoration: none; opacity: 0; transition: opacity .2s; }
+.page h2:hover .anker, .anker:focus { opacity: 1; }
+.anker:hover { color: var(--muted); }
+@media (hover: none) { .anker { opacity: 1; } }
+/* slot onderaan subpagina's */
+.slot { color: var(--muted); font-style: italic; }
+.slot a { color: var(--muted); text-decoration: none; }
+.slot a:hover { color: var(--ink); }
+a:focus-visible { outline: 1px dotted currentColor; outline-offset: 3px; }
