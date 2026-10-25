@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>onktvos</title>
+  <style>
+    :root { --paper: #f4efe4; --ink: #1c1816; --muted: #7a6f63; }
+    @media (prefers-color-scheme: dark) {
+      :root { --paper: #1c1816; --ink: #f4efe4; --muted: #a89c8e; }
+    }
+    html, body { margin: 0; height: 100%; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      display: grid;
+      place-items: center;
+      padding: 0 16px;
+    }
+    h1 { font-size: clamp(3rem, 14vw, 7rem); font-weight: 400; margin: 0; letter-spacing: -0.02em; }
+    p { color: var(--muted); font-style: italic; margin: 0.5em 0 0; text-align: center; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>onktvos</h1>
+    <p>komt eraan.</p>
+  </main>
+</body>
+</html>
